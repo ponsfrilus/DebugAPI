@@ -1,0 +1,31 @@
+{
+  "name": "debugapi",
+  "version": "0.0.1",
+  "description": "A fake API for debugging purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "export FORCE_COLOR=1; DEBUG=app node index.js"
+  },
+  "author": "Nicolas Borboën <ponsfrilus@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ponsfrilus/DebugAPI.git"
+  },
+  "keywords": [
+    "debug",
+    "api",
+    "nodejs"
+  ],
+  "bugs": {
+    "url": "https://github.com/ponsfrilus/DebugAPI/issues"
+  },
+  "homepage": "https://github.com/ponsfrilus/DebugAPI#readme"
+}
