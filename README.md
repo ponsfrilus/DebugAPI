@@ -45,3 +45,13 @@ Connection: keep-alive
 Got a GET request at /
 Connection closed by foreign host.
 ```
+
+# Docker
+
+## Build
+
+`docker build -t ponsfrilus/debugapi .`
+
+## Run
+
+`docker run --rm --name debugapi -p 3000:3000 -it ponsfrilus/debugapi`

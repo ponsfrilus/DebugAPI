@@ -4,7 +4,10 @@ const app        = express()
 const bodyParser = require('body-parser')
 const port       = process.env.PORT || 3000
 
+app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json()) // add a middleware (so that express can parse request.body's json)
+app.use(bodyParser.json({type: "text/json"})) // add a middleware (so that express can parse request.body's json)
+app.use(bodyParser.text({type: "*/*"})) // add a middleware (so that express can parse request.body's json)
 app.listen(port, () => debug(`Debug API listening on port ${port}!`))
 
 // Catch everythings...
