@@ -2,6 +2,8 @@
 
 This launch an API endpoint that dump information that you need.
 
+![live screenshot](./live-screenshot.png)
+
 ## Usage
 
   * To run the server, use `export FORCE_COLOR=1; DEBUG=app node index.js`,
