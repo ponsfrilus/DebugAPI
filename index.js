@@ -1,4 +1,4 @@
-const debug      = require('debug')('app')
+const debug      = require('debug')('debugapi')
 const express    = require('express')
 const app        = express()
 const bodyParser = require('body-parser')
@@ -15,7 +15,7 @@ app.all('/*', function (req, res, next) {
   console.log('\n')
   debug('Got a', req.method, 'request at ', req.url)
   debug('Header:', JSON.stringify(req.headers))
-  debug('Body:', req.body)
+  debug('Body: %O', req.body)
   next() // ...and pass control to the next handler
 })
 

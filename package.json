@@ -1,11 +1,11 @@
 {
   "name": "debugapi",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A fake API for debugging purpose",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "export FORCE_COLOR=1; DEBUG=app node index.js"
+    "debug": "export FORCE_COLOR=1; DEBUG_COLORS=1 DEBUG_DEPTH=null DEBUG=debugapi node index.js"
   },
   "author": "Nicolas Borboën <ponsfrilus@gmail.com>",
   "license": "MIT",
