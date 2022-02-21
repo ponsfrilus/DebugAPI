@@ -4,9 +4,7 @@ FROM ubuntu:latest
 LABEL maintainer="ponsfrilus@gmail.com"
 
 RUN apt update -y && apt install -yq httpie curl
-RUN curl -sf -L  https://deb.nodesource.com/setup_10.x -o node_setup.sh
-RUN chmod +x node_setup.sh
-RUN ./node_setup.sh
+RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
 RUN apt install -y nodejs
 RUN node -v
 RUN npm -v

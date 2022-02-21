@@ -10,9 +10,9 @@
   "author": "Nicolas Borboën <ponsfrilus@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "debug": "^4.1.1",
-    "express": "^4.17.1"
+    "body-parser": "^1.19.2",
+    "debug": "^4.3.3",
+    "express": "^4.17.3"
   },
   "devDependencies": {},
   "repository": {
